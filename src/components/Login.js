@@ -50,7 +50,7 @@ const Login = () => {
                   displayName: displayName,
                 })
               )
-              navigate("/browser")
+              navigate("/browse")
               // ...
             })
             .catch((error) => {
@@ -74,7 +74,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           console.log(userCredential)
-          navigate("/browser")
+          navigate("/browse")
         })
         .catch((error) => {
           const errorCode = error.code
